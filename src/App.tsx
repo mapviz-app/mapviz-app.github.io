@@ -10,6 +10,14 @@ function App() {
         <p>
           This line is the first real update to the deployed site!
         </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
       </header>
     </div>
   );
