@@ -37,23 +37,33 @@
     ]
   },
   "devDependencies": {
+    "@semantic-release/changelog": "^5.0.1",
     "@semantic-release/git": "^9.0.0",
     "semantic-release": "^17.1.2"
   },
   "release": {
     "branches": [
       "master",
-      {"name": "beta", "prerelease": true}
+      {
+        "name": "beta",
+        "prerelease": true
+      }
     ],
     "plugins": [
       "@semantic-release/commit-analyzer",
       "@semantic-release/release-notes-generator",
       "@semantic-release/changelog",
-      ["@semantic-release/github", {
-      "assets": [
-        {"path": "release.zip", "label": "Compiled React project"}
-      ]
-    }],
+      [
+        "@semantic-release/github",
+        {
+          "assets": [
+            {
+              "path": "release.zip",
+              "label": "Compiled React project"
+            }
+          ]
+        }
+      ],
       [
         "@semantic-release/git",
         {
