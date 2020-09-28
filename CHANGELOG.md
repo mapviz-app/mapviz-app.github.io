@@ -1,3 +1,10 @@
+# [1.0.0-beta.5](https://github.com/mapviz-app/mapviz-app.github.io/compare/v1.0.0-beta.4...v1.0.0-beta.5) (2020-09-28)
+
+
+### Bug Fixes
+
+* **package.json:** use 'build' as 'src' folder for deploy ([3171969](https://github.com/mapviz-app/mapviz-app.github.io/commit/31719691c1a93981b227d9cfa1ee7f9ec834ef53))
+
 # [1.0.0-beta.4](https://github.com/mapviz-app/mapviz-app.github.io/compare/v1.0.0-beta.3...v1.0.0-beta.4) (2020-09-28)
 
 
