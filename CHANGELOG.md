@@ -1,3 +1,10 @@
+# [1.0.0-beta.3](https://github.com/mapviz-app/mapviz-app.github.io/compare/v1.0.0-beta.2...v1.0.0-beta.3) (2020-09-28)
+
+
+### Bug Fixes
+
+* **package.json:** use correct name property ([b045487](https://github.com/mapviz-app/mapviz-app.github.io/commit/b0454873f68b1283489f9430f94d498b09cc7b1e))
+
 # [1.0.0-beta.2](https://github.com/mapviz-app/mapviz-app.github.io/compare/v1.0.0-beta.1...v1.0.0-beta.2) (2020-09-28)
 
 
