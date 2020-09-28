@@ -2,6 +2,7 @@
   "name": "mapviz-app.github.io",
   "version": "1.0.0",
   "private": true,
+  "repository": "https://github.com/mapviz-app/mapviz-app.github.io.git",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.0.4",
