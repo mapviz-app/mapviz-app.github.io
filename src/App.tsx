@@ -8,7 +8,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          This line is the first real update to the deployed site!
+          Hold your horses VR coming soon 📦
         </p>
         <a
           className="App-link"

@@ -1,6 +1,6 @@
 {
-  "short_name": "God Corp",
-  "name": "Godzilla Corporation",
+  "short_name": "mapviz",
+  "name": "Mapviz platform application",
   "icons": [
     {
       "src": "favicon.ico",
