@@ -77,7 +77,8 @@
       [
         "@qiwi/semantic-release-gh-pages-plugin",
         {
-          "msg": "New deploy <%= nextRelease.gitTag %>"
+          "msg": "New deploy <%= nextRelease.gitTag %>",
+          "src": "./CHANGELOG.md"
         }
       ]
     ]
