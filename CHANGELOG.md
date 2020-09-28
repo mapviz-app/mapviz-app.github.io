@@ -1,3 +1,11 @@
+# [1.0.0-beta.2](https://github.com/mapviz-app/mapviz-app.github.io/compare/v1.0.0-beta.1...v1.0.0-beta.2) (2020-09-28)
+
+
+### Bug Fixes
+
+* emoji a11y ([7ce4f93](https://github.com/mapviz-app/mapviz-app.github.io/commit/7ce4f93b9a16138edd565684d3f5bbd483520d61))
+* update app name ([5d3768c](https://github.com/mapviz-app/mapviz-app.github.io/commit/5d3768cff6b08d86ddfeea6972903dad007169c0))
+
 # 1.0.0-beta.1 (2020-09-23)
 
 
