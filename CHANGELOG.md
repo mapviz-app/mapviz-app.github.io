@@ -1,3 +1,10 @@
+# [1.0.0-beta.4](https://github.com/mapviz-app/mapviz-app.github.io/compare/v1.0.0-beta.3...v1.0.0-beta.4) (2020-09-28)
+
+
+### Bug Fixes
+
+* add GH_TOKEN and repositoryUrl ([5452a9b](https://github.com/mapviz-app/mapviz-app.github.io/commit/5452a9bae832ce3023c8a197a0954833d5935d51))
+
 # [1.0.0-beta.3](https://github.com/mapviz-app/mapviz-app.github.io/compare/v1.0.0-beta.2...v1.0.0-beta.3) (2020-09-28)
 
 
