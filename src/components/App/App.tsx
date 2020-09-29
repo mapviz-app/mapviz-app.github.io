@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './logo.svg';
+import logo from './assets/logo.svg';
 import './App.css';
 
 function App() {
@@ -8,7 +8,10 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Hold your horses VR coming soon <span role="img" aria-label="box emoji">📦</span>
+          Hold your horses VR coming soon{' '}
+          <span role="img" aria-label="box emoji">
+            📦
+          </span>
         </p>
         <a
           className="App-link"
