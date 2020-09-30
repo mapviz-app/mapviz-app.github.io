@@ -1,44 +1,83 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Innovation Project - Mapviz
 
-## Available Scripts
+[![Actions Status](https://github.com/mapviz-app/mapviz-app.github.io/workflows/Deploy%20to%20GitHub%20pages/badge.svg)](https://github.com/mapviz-app/mapviz-app.github.io/actions) [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release) [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
-In the project directory, you can run:
+[View the latest deployed version](https://mapviz-app.github.io/)
 
-### `npm start`
+Team Godzillas innovation project Mapviz.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+> TODO: add better description of the innovation project task, goal and process.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+> TODO: add a description of our project idea --> _what is Mapviz_
 
-### `npm run test`
+## Development
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Getting started
 
-### `npm run build`
+Clone repository.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+# Using HTTPS
+$ git clone https://github.com/mapviz-app/mapviz-app.github.io.git
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+# Using SSH
+$ git clone git@github.com:mapviz-app/mapviz-app.github.io.git
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+# Navigate to repository folder
+$ cd mapviz-app.github.io
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Install dependencies.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+$ npm install
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Start local development server.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```bash
+$ npm start
+```
 
-## Learn More
+### VSCode extensions
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+You should have **ESLint** and **Prettier** extensions added to your vscode in order for formatting and linting to work correctly.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+It is also recommended to enable `"editor.formatOnSave": true` in vscode settings.
+
+If linting is not working correctly, you might also need to add this `"eslint.validate": ["typescript", "typescriptreact"],` to the settings.
+
+Since the project is using styled-components you probably also want to add **vscode-styled-components** extension for better syntax highlighting in the IDE.
+
+## Development workflow
+
+### CI/CD
+
+This repository's continuous delivery pipeline is setup to run [semantic-release](https://github.com/semantic-release/semantic-release). This means that all of the commit messages need to follow [Angula Commit Message Conventions](https://github.com/angular/angular/blob/master/CONTRIBUTING.md#-commit-message-format) in order for semantic-release to be able to automate release and deploy step. This repository uses commitizen to format commit messages correctly. More on this below.
+
+### Local environment
+
+This repository is setup to use [commitizen](https://github.com/commitizen/cz-cli), [husky](https://github.com/typicode/husky/tree/master) and [lint-staged](https://github.com/okonet/lint-staged). These will prevent bad code from getting into the repository.
+
+Husky is used to easily manage different git hooks. [View current Husky setup.](https://github.com/mapviz-app/mapviz-app.github.io/blob/4e2f62a9ec0fedc51600f39e8c350cb3c5e0ac44/package.json#L98) This repo is configured to run code on the following hooks:
+
+- `pre-commit`
+
+  Is run when command `git commit` is run and will run `lint-staged`. lint-staged will run eslint and prettier against the staged files and will prevent a commit if there are lint and/or formatting errors that cannot be automatically fixed. These errors need to be fixed before a commit can be made.
+
+- `prepare-commit-msg`
+
+  Is run when command `git commit` is run and opens `commitizen` cli tool. This is an interactive terminal session that asks questions about the commit changes and then generates a commit message in the right format for semantic-release.
+
+  After commitizen exits it opens the commit message in vim. Here you can preview the message and make changes if someting is off. To accept the commit message type `:wq` and vim will save and close.
+
+- `pre-push`
+
+  Is run when command `git push` is run and will run tests before the changes/branch will be pushed to repo. If any tests fail the push will be cancelled and the tests need to be fixed before a push can be made.
+
+---
+
+**NOTE:** When making commits always use the `git commit` command to make new commits. This will make sure the correct commit message format is used. Also use the `git push` command when pushing changes to repo. Otherwise the git hooks might not trigger correctly.
+
+---
