@@ -1,3 +1,7 @@
 {
-  "extends": ["airbnb-typescript-prettier"]
+  "extends": ["airbnb-typescript-prettier", "plugin:jest/recommended"],
+  "env": {
+    "jest/globals": true
+  },
+  "plugins": ["jest"]
 }
