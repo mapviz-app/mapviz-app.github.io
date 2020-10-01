@@ -1,23 +1,32 @@
 import React from 'react';
-import { Container, AppHeader, AppLogo, AppLink } from './App.styles';
-import logo from '../../assets/logo.svg';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import ReactTemplate from '../../pages/ReactTemplate';
+import Main from '../../pages/Main';
+import MapDemo from '../../pages/MapDemo';
+import VRDemo from '../../pages/VRDemo';
+import Dashboard from '../../pages/Dashboard';
 
-const App = () => {
+const App: React.FC = () => {
   return (
-    <Container>
-      <AppHeader>
-        <AppLogo src={logo} alt="logo" />
-        <p>
-          Hold your horses VR coming soon{' '}
-          <span role="img" aria-label="box emoji">
-            📦
-          </span>
-        </p>
-        <AppLink href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-          Learn React
-        </AppLink>
-      </AppHeader>
-    </Container>
+    <Router>
+      <Switch>
+        <Route path="/dashboard">
+          <Dashboard />
+        </Route>
+        <Route path="/vrdemo">
+          <VRDemo />
+        </Route>
+        <Route path="/mapdemo">
+          <MapDemo />
+        </Route>
+        <Route path="/template">
+          <ReactTemplate />
+        </Route>
+        <Route path="/">
+          <Main />
+        </Route>
+      </Switch>
+    </Router>
   );
 };
 
