@@ -1,3 +1,10 @@
+# [1.0.0-beta.6](https://github.com/mapviz-app/mapviz-app.github.io/compare/v1.0.0-beta.5...v1.0.0-beta.6) (2020-10-01)
+
+
+### Features
+
+* add react router and update project structure ([d65682c](https://github.com/mapviz-app/mapviz-app.github.io/commit/d65682cec28db270a145a6ac6a03887461d07117))
+
 # [1.0.0-beta.5](https://github.com/mapviz-app/mapviz-app.github.io/compare/v1.0.0-beta.4...v1.0.0-beta.5) (2020-09-28)
 
 
