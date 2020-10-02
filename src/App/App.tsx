@@ -1,10 +1,10 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import ReactTemplate from '../../pages/ReactTemplate';
-import Main from '../../pages/Main';
-import MapDemo from '../../pages/MapDemo';
-import VRDemo from '../../pages/VRDemo';
-import Dashboard from '../../pages/Dashboard';
+import ReactTemplate from '../pages/ReactTemplate';
+import Main from '../pages/Main';
+import MapDemo from '../pages/MapDemo';
+import VRDemo from '../pages/VRDemo';
+import Dashboard from '../pages/Dashboard';
 
 const App: React.FC = () => {
   return (
