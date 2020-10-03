@@ -3,8 +3,9 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import ReactTemplate from '../pages/ReactTemplate';
 import Main from '../pages/Main';
 import MapDemo from '../pages/MapDemo';
-import VRDemo from '../pages/VRDemo';
+import ThreeJSTest from '../pages/ThreeJSTest';
 import Dashboard from '../pages/Dashboard';
+import ReactThreeFiber from '../pages/ReactThreeFiber';
 
 const App: React.FC = () => {
   return (
@@ -13,8 +14,11 @@ const App: React.FC = () => {
         <Route path="/dashboard">
           <Dashboard />
         </Route>
-        <Route path="/vrdemo">
-          <VRDemo />
+        <Route path="/threejstest">
+          <ThreeJSTest />
+        </Route>
+        <Route path="/reactthreefiber">
+          <ReactThreeFiber />
         </Route>
         <Route path="/mapdemo">
           <MapDemo />
