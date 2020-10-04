@@ -1,6 +1,7 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import styled from 'styled-components';
 import { Canvas, useFrame } from 'react-three-fiber';
+import { OrbitControls } from '@react-three/drei';
 import { Mesh } from 'three';
 
 const Wrapper = styled.div`
@@ -9,8 +10,7 @@ const Wrapper = styled.div`
 `;
 
 const MapDemo: React.FC = () => {
-  // @ts-ignore
-  const SpinnyBox = (props) => {
+  const SpinnyBox = ({ position }): JSX.Element => {
     // This reference will give us direct access to the mesh
     const mesh = useRef<Mesh>(null);
 
@@ -28,7 +28,7 @@ const MapDemo: React.FC = () => {
 
     return (
       <mesh
-        {...props}
+        position={position}
         ref={mesh}
         scale={active ? [1.5, 1.5, 1.5] : [1, 1, 1]}
         onClick={(): void => {
@@ -40,7 +40,7 @@ const MapDemo: React.FC = () => {
         }}
         onPointerOut={(): void => {
           setHover(false);
-          document.body.style.cursor = 'default';
+          document.body.style.cursor = 'grab';
         }}
       >
         <boxBufferGeometry args={[1, 1, 1]} />
@@ -49,14 +49,20 @@ const MapDemo: React.FC = () => {
     );
   };
 
+  useEffect(() => {
+    return (): void => {
+      document.body.style.cursor = 'default';
+    };
+  });
+
   return (
     <Wrapper>
-      <h1>React Three Fiber test</h1>
-      <Canvas>
+      <Canvas onPointerOver={() => (document.body.style.cursor = 'grab')}>
         <ambientLight />
         <pointLight position={[10, 10, 10]} />
         <SpinnyBox position={[-1.2, 0, 0]} />
         <SpinnyBox position={[1.2, 0, 0]} />
+        <OrbitControls />
       </Canvas>
     </Wrapper>
   );
