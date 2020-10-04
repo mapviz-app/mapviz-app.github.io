@@ -1,3 +1,12 @@
+# [1.0.0-beta.7](https://github.com/mapviz-app/mapviz-app.github.io/compare/v1.0.0-beta.6...v1.0.0-beta.7) (2020-10-04)
+
+
+### Features
+
+* **react-three-fiber-test:** add basic test page ([c019b96](https://github.com/mapviz-app/mapviz-app.github.io/commit/c019b966a317383c73e8a2417798be52fadff248))
+* **react-three-fiber-test:** add OrbitControls from drei ([2dbb8e2](https://github.com/mapviz-app/mapviz-app.github.io/commit/2dbb8e2360480c91ae71f44ae533ad756fc6a623))
+* **vr-demo:** add vr demo page WIP ([86ee0e3](https://github.com/mapviz-app/mapviz-app.github.io/commit/86ee0e32ccb77696db91785a61d9f28eaac48a3c))
+
 # [1.0.0-beta.6](https://github.com/mapviz-app/mapviz-app.github.io/compare/v1.0.0-beta.5...v1.0.0-beta.6) (2020-10-01)
 
 
