@@ -6,6 +6,7 @@ import MapDemo from '../pages/MapDemo';
 import ThreeJSTest from '../pages/ThreeJSTest';
 import Dashboard from '../pages/Dashboard';
 import ReactThreeFiber from '../pages/ReactThreeFiber';
+import VRDemo from '../pages/VRDemo';
 
 const App: React.FC = () => {
   return (
@@ -19,6 +20,9 @@ const App: React.FC = () => {
         </Route>
         <Route path="/reactthreefiber">
           <ReactThreeFiber />
+        </Route>
+        <Route path="/vrdemo">
+          <VRDemo />
         </Route>
         <Route path="/mapdemo">
           <MapDemo />
