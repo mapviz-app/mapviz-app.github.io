@@ -5,6 +5,9 @@
   },
   "plugins": ["jest"],
   "rules": {
-    "import/prefer-default-export": "off"
+    "import/prefer-default-export": "off",
+    "@typescript-eslint/ban-ts-ignore": "off",
+    "react/jsx-props-no-spreading": "warn",
+    "no-return-assign": "warn"
   }
 }
