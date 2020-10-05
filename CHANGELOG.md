@@ -1,3 +1,10 @@
+# [1.0.0-beta.9](https://github.com/mapviz-app/mapviz-app.github.io/compare/v1.0.0-beta.8...v1.0.0-beta.9) (2020-10-05)
+
+
+### Bug Fixes
+
+* **vr-demo:** make cube smaller and move it further back ([fb3272e](https://github.com/mapviz-app/mapviz-app.github.io/commit/fb3272e6463d206a4db04bedfeca375ec27bd966))
+
 # [1.0.0-beta.8](https://github.com/mapviz-app/mapviz-app.github.io/compare/v1.0.0-beta.7...v1.0.0-beta.8) (2020-10-05)
 
 
