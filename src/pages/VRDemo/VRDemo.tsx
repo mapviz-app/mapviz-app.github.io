@@ -33,7 +33,7 @@ const VRDemo: React.FC = () => {
       }
     });
     return (
-      <mesh ref={mesh} position={[0, 2, 0]} receiveShadow castShadow>
+      <mesh ref={mesh} scale={[0.5, 0.5, 0.5]} position={[0, 2, -2]} receiveShadow castShadow>
         <boxBufferGeometry attach="geometry" args={[1, 1, 1]} />
         <meshLambertMaterial attach="material" color="orange" />
       </mesh>
