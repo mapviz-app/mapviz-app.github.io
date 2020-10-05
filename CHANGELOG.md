@@ -1,3 +1,11 @@
+# [1.0.0-beta.8](https://github.com/mapviz-app/mapviz-app.github.io/compare/v1.0.0-beta.7...v1.0.0-beta.8) (2020-10-05)
+
+
+### Features
+
+* **vr-demo:** add animated cube and OrbitControls ([b857346](https://github.com/mapviz-app/mapviz-app.github.io/commit/b857346f16be788e12a380dd4b21a3d236b2a015))
+* add test glTF model to assets ([0ca70f3](https://github.com/mapviz-app/mapviz-app.github.io/commit/0ca70f3abd488c3fb5580fd8a4e5d55bf1154fe1))
+
 # [1.0.0-beta.7](https://github.com/mapviz-app/mapviz-app.github.io/compare/v1.0.0-beta.6...v1.0.0-beta.7) (2020-10-04)
 
 
