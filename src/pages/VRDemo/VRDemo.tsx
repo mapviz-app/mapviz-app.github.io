@@ -39,10 +39,9 @@ const VRDemo: React.FC = () => {
     const { clock } = useThree();
     const mesh = useRef<Mesh>();
     const { scene } = useLoader(GLTFLoader, 'gltf/nokia_3310/scene.gltf');
-    const [x, y, z] = position;
     useFrame(() => {
       if (mesh.current) {
-        mesh.current.position.y = y + Math.sin(clock.getElapsedTime()) * 0.5;
+        mesh.current.position.y = position[1] + Math.sin(clock.getElapsedTime()) * 0.5;
         mesh.current.rotation.y += 0.02;
       }
     });
