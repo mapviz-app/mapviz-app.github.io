@@ -1,3 +1,11 @@
+# [1.0.0-beta.10](https://github.com/mapviz-app/mapviz-app.github.io/compare/v1.0.0-beta.9...v1.0.0-beta.10) (2020-10-18)
+
+
+### Bug Fixes
+
+* **vr-demo:** add better models, lights, controls and camera position in vr ([b5136fa](https://github.com/mapviz-app/mapviz-app.github.io/commit/b5136faf8d68514ef6c6c8125e1f77bd63933992))
+* **vr-demo:** build error ([541c718](https://github.com/mapviz-app/mapviz-app.github.io/commit/541c71813064c941803f1d4756b9fcf8960c2667))
+
 # [1.0.0-beta.9](https://github.com/mapviz-app/mapviz-app.github.io/compare/v1.0.0-beta.8...v1.0.0-beta.9) (2020-10-05)
 
 
