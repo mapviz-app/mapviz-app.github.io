@@ -1,3 +1,16 @@
+# [1.0.0-beta.11](https://github.com/mapviz-app/mapviz-app.github.io/compare/v1.0.0-beta.10...v1.0.0-beta.11) (2020-10-25)
+
+
+### Bug Fixes
+
+* **gltf:** remove AdamHead model ([0263511](https://github.com/mapviz-app/mapviz-app.github.io/commit/026351117685b5f69aef58f62619adee4db95fb9))
+* **package.json:** bump R3F lib versions ([8de1572](https://github.com/mapviz-app/mapviz-app.github.io/commit/8de1572bbc84218a5f34641c0e3bbff89f45c82c))
+
+
+### Features
+
+* **vr-demo:** add cabin model and enable shadows on gltf models ([3d64454](https://github.com/mapviz-app/mapviz-app.github.io/commit/3d644548ccf35baf33cd5843408bac7d55cc013f))
+
 # [1.0.0-beta.10](https://github.com/mapviz-app/mapviz-app.github.io/compare/v1.0.0-beta.9...v1.0.0-beta.10) (2020-10-18)
 
 
