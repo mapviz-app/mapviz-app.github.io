@@ -1,3 +1,10 @@
+# [1.0.0-beta.13](https://github.com/mapviz-app/mapviz-app.github.io/compare/v1.0.0-beta.12...v1.0.0-beta.13) (2020-10-26)
+
+
+### Bug Fixes
+
+* **gh-pages:** add 'homepage' parameter in to package.json ([7e65e99](https://github.com/mapviz-app/mapviz-app.github.io/commit/7e65e9978dc2ff61eadb63eb9713031a4df25232))
+
 # [1.0.0-beta.12](https://github.com/mapviz-app/mapviz-app.github.io/compare/v1.0.0-beta.11...v1.0.0-beta.12) (2020-10-26)
 
 
