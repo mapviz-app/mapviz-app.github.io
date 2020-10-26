@@ -1,3 +1,10 @@
+# [1.0.0-beta.12](https://github.com/mapviz-app/mapviz-app.github.io/compare/v1.0.0-beta.11...v1.0.0-beta.12) (2020-10-26)
+
+
+### Bug Fixes
+
+* **gh-pages:** always serve index.html for all urls ([faa7a05](https://github.com/mapviz-app/mapviz-app.github.io/commit/faa7a05a1f520fa764600476b5de21d464352fb7))
+
 # [1.0.0-beta.11](https://github.com/mapviz-app/mapviz-app.github.io/compare/v1.0.0-beta.10...v1.0.0-beta.11) (2020-10-25)
 
 
