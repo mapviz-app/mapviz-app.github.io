@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "repository": "https://github.com/mapviz-app/mapviz-app.github.io.git",
+  "homepage": "https://mapviz-app.github.io",
   "dependencies": {
     "@react-three/drei": "^2.2.1",
     "@react-three/xr": "^1.1.0",
