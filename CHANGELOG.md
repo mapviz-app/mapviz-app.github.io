@@ -1,3 +1,10 @@
+# [1.0.0-beta.14](https://github.com/mapviz-app/mapviz-app.github.io/compare/v1.0.0-beta.13...v1.0.0-beta.14) (2020-11-15)
+
+
+### Features
+
+* **main:** add base layout for the ui update ([aa39683](https://github.com/mapviz-app/mapviz-app.github.io/commit/aa396831e97570dd960efe1ec7e71a153146fefb))
+
 # [1.0.0-beta.13](https://github.com/mapviz-app/mapviz-app.github.io/compare/v1.0.0-beta.12...v1.0.0-beta.13) (2020-10-26)
 
 
