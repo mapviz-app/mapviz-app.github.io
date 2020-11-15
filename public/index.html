@@ -21,6 +21,33 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
+    <!-- Load SF fonts from public folder -->
+    <style>
+      @font-face {
+        font-family: 'SF Pro Display';
+        src: url('%PUBLIC_URL%/fonts/SFProDisplay-Regular.ttf');
+      }
+      @font-face {
+        font-family: 'SF Pro Display';
+        src: url('%PUBLIC_URL%/fonts/SFProDisplay-SemiBold.ttf');
+        font-weight: bold;
+      }
+      @font-face {
+        font-family: 'SF Pro Display';
+        src: url('%PUBLIC_URL%/fonts/SFProDisplay-Bold.ttf');
+        font-weight: bolder;
+      }
+      @font-face {
+        font-family: 'SF Pro Text';
+        src: url('%PUBLIC_URL%/fonts/SFProText-Medium.ttf');
+      }
+      @font-face {
+        font-family: 'SF Pro Text';
+        src: url('%PUBLIC_URL%/fonts/SFProText-SemiBold.ttf');
+        font-weight: bold;
+      }
+    </style>
+
     <title>Mapviz</title>
 
     <!-- Start Single Page Apps for GitHub Pages -->
