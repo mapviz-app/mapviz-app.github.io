@@ -7,6 +7,7 @@ import ThreeJSTest from '../pages/ThreeJSTest';
 import Dashboard from '../pages/Dashboard';
 import ReactThreeFiber from '../pages/ReactThreeFiber';
 import VRDemo from '../pages/VRDemo';
+import InspectLocation from '../pages/InspectLocation';
 
 const App: React.FC = () => {
   return (
@@ -26,6 +27,9 @@ const App: React.FC = () => {
         </Route>
         <Route path="/mapdemo">
           <MapDemo />
+        </Route>
+        <Route path="/location">
+          <InspectLocation />
         </Route>
         <Route path="/template">
           <ReactTemplate />

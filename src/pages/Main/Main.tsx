@@ -12,6 +12,7 @@ const Main: React.FC = () => {
       <LinkButton route="/threejstest">Three.js Test</LinkButton>
       <LinkButton route="/reactthreefiber">React Three Fiber Test</LinkButton>
       <LinkButton route="/template">Old Template</LinkButton>
+      <LinkButton route="/location">Inspect Location</LinkButton>
     </Container>
   );
 };
