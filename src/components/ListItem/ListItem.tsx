@@ -1,4 +1,5 @@
 import React from 'react';
+import { useHistory } from 'react-router-dom';
 import {
   Container,
   NameLabel,
@@ -15,9 +16,10 @@ export type Props = {
 };
 
 const ListItem: React.FC<Props> = ({ name, address, type }) => {
+  const history = useHistory();
   const itemIcon = type === 'commercial' ? 'commercial-building' : 'office-building';
   return (
-    <Container>
+    <Container onClick={(): void => history.push('/location')}>
       <LeftIcon name={itemIcon} />
       <TextContainer>
         <NameLabel>{name}</NameLabel>
