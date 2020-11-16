@@ -1,3 +1,11 @@
+# [1.0.0-beta.17](https://github.com/mapviz-app/mapviz-app.github.io/compare/v1.0.0-beta.16...v1.0.0-beta.17) (2020-11-16)
+
+
+### Bug Fixes
+
+* **location-inspection-scene:** add back button ([1f9a158](https://github.com/mapviz-app/mapviz-app.github.io/commit/1f9a15807c6b2400a6366b795de4bb20e538e823))
+* add responsive styles for mobile device width ([58ffd4f](https://github.com/mapviz-app/mapviz-app.github.io/commit/58ffd4fe25160ab6a538678d674abd03441255b6))
+
 # [1.0.0-beta.16](https://github.com/mapviz-app/mapviz-app.github.io/compare/v1.0.0-beta.15...v1.0.0-beta.16) (2020-11-16)
 
 
