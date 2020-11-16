@@ -1,3 +1,15 @@
+# [1.0.0-beta.16](https://github.com/mapviz-app/mapviz-app.github.io/compare/v1.0.0-beta.15...v1.0.0-beta.16) (2020-11-16)
+
+
+### Bug Fixes
+
+* **list-item:** add navigation into location scene ([2c4df11](https://github.com/mapviz-app/mapviz-app.github.io/commit/2c4df11f8c7853d27cb1179583ebec0a2a386558))
+
+
+### Features
+
+* add location inspection scene ([27f95c3](https://github.com/mapviz-app/mapviz-app.github.io/commit/27f95c3759fe5da9d6f7804fef60677b838bc475))
+
 # [1.0.0-beta.15](https://github.com/mapviz-app/mapviz-app.github.io/compare/v1.0.0-beta.14...v1.0.0-beta.15) (2020-11-16)
 
 
