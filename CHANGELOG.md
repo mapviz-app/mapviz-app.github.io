@@ -1,3 +1,11 @@
+# [1.0.0-beta.15](https://github.com/mapviz-app/mapviz-app.github.io/compare/v1.0.0-beta.14...v1.0.0-beta.15) (2020-11-16)
+
+
+### Bug Fixes
+
+* **public:** add SanFrancisco fonts ([5932498](https://github.com/mapviz-app/mapviz-app.github.io/commit/59324982dcea680993e5c17a9788fdaa7dcf5ab3))
+* **side-nav:** add styles and sample data ([9ca9ed9](https://github.com/mapviz-app/mapviz-app.github.io/commit/9ca9ed9d17d62647d5c8ada3c70a958d5d811a63))
+
 # [1.0.0-beta.14](https://github.com/mapviz-app/mapviz-app.github.io/compare/v1.0.0-beta.13...v1.0.0-beta.14) (2020-11-15)
 
 
