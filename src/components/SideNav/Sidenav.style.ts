@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import MapComponent from '../Map';
 
 export const Nav = styled.nav`
   position: fixed;
@@ -11,6 +12,34 @@ export const Nav = styled.nav`
   flex-direction: column;
   border-radius: 7px;
   padding: 24px 16px;
+
+  @media (max-width: 500px) {
+    position: relative;
+    width: auto;
+    top: unset;
+    left: unset;
+    border-radius: unset;
+    padding: 20px;
+  }
+`;
+
+export const Map = styled(MapComponent)`
+  display: none;
+  @media (max-width: 500px) {
+    display: flex;
+    position: relative;
+    width: auto;
+    top: unset;
+    left: unset;
+    border-radius: 13px;
+    height: 300px;
+  }
+`;
+
+export const StickySection = styled.section`
+  position: sticky;
+  top: -1px;
+  background-color: #1b1b21;
 `;
 
 export const Section = styled.section`
@@ -34,6 +63,7 @@ export const SubTitle = styled.h3`
   padding: 0;
   margin: 0;
   margin-bottom: 2px;
+  margin-top: 16px;
 `;
 
 export const TabBarContainer = styled.nav`
@@ -42,6 +72,7 @@ export const TabBarContainer = styled.nav`
   border-radius: 9px;
   height: 30px;
   position: relative;
+  margin-top: 16px;
 `;
 
 export const Tab = styled.text`
@@ -55,6 +86,8 @@ export const Tab = styled.text`
   line-height: 30px;
   z-index: 2;
   cursor: pointer;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
 `;
 
 interface CurrentTabIndicatorProps {
@@ -82,4 +115,8 @@ export const Divider = styled.div`
 export const LocationsContainer = styled.section`
   display: flex;
   flex-direction: column;
+  margin-top: 16px;
+  @media (min-width: 500px) {
+    overflow-y: scroll;
+  }
 `;

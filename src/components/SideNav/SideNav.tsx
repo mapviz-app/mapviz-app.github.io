@@ -10,6 +10,8 @@ import {
   CurrentTabIndicator,
   Divider,
   LocationsContainer,
+  StickySection,
+  Map,
 } from './Sidenav.style';
 import ListItem, { Props as ListItemProps } from '../ListItem';
 
@@ -90,16 +92,13 @@ const SideNav: React.FC<Props> = () => {
         <SubTitle>Current location</SubTitle>
         <Title>Finding location...</Title>
       </Section>
-      <Section>
-        <TabBar />
-      </Section>
-      <Section>
+      <Map />
+      <StickySection>
+        <Section>
+          <TabBar />
+        </Section>
         <Divider />
-      </Section>
-      <Section>
-        <SubTitle>Status updated now</SubTitle>
-        <Title>Locations</Title>
-      </Section>
+      </StickySection>
       <Locations />
     </Nav>
   );

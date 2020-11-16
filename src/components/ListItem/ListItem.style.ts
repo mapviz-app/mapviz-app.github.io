@@ -11,6 +11,7 @@ export const Container = styled.button`
   outline: none;
   cursor: pointer;
   margin-bottom: 10px;
+  -webkit-tap-highlight-color: transparent;
 `;
 
 export const LeftIcon = styled(Icon)`
@@ -36,6 +37,7 @@ export const NameLabel = styled.p`
   font-size: 16px;
   padding: 0;
   margin: 0;
+  text-align: start;
 `;
 
 export const AddressLabel = styled.p`
@@ -45,4 +47,5 @@ export const AddressLabel = styled.p`
   padding: 0;
   margin: 0;
   margin-top: 2px;
+  text-align: start;
 `;

@@ -3,11 +3,12 @@ import { Wrapper } from './Map.style';
 
 type Props = {
   // Define possible props here
+  className?: string;
 };
 
-const Map: React.FC<Props> = () => {
+const Map: React.FC<Props> = ({ className }) => {
   return (
-    <Wrapper>
+    <Wrapper className={className}>
       <h3>harp.gl map</h3>
     </Wrapper>
   );
