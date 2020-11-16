@@ -1,15 +1,15 @@
 /* eslint-disable react/jsx-props-no-spreading */
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { Canvas } from 'react-three-fiber';
+// import { Canvas } from 'react-three-fiber';
 import { OrbitControls } from '@react-three/drei';
 import { VRCanvas } from '@react-three/xr';
-import * as THREE from 'three';
+// import * as THREE from 'three';
 
 const Wrapper = styled.div`
   width: 100vw;
   height: 100vh;
-  background-color: #4d4d4d;
+  background-color: #222228;
   user-select: none;
 `;
 
@@ -27,7 +27,7 @@ const InspectLocation: React.FC = () => {
   const Floor = (): JSX.Element => {
     return (
       <>
-        <gridHelper args={[150, 150, 'coral', '#252525']} position={[0, -0.5, 0]} />
+        <gridHelper args={[150, 150, 'coral', '#131316']} position={[0, -0.5, 0]} />
       </>
     );
   };
@@ -59,11 +59,8 @@ const InspectLocation: React.FC = () => {
         <Box castShadow position={[0, 1, 0]} color="lightgrey" />
         <Box castShadow position={[0, 2, 0]} color="lightgrey" />
         <Box castShadow position={[0, 3, 0]} color="lightgrey" />
-        <Box castShadow position={[0, 4, 0]} color="lightgrey" />
-        <Box castShadow position={[0, 5, 0]} color="lightgrey" />
-        <Box castShadow position={[0, 6, 0]} color="lightgrey" />
         <Floor />
-        <fog attach="fog" args={['#4d4d4d', 25, 40]} />
+        <fog attach="fog" args={['#222228', 25, 40]} />
       </VRCanvas>
     </Wrapper>
   );
