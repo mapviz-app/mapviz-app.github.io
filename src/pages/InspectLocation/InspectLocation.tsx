@@ -5,6 +5,8 @@ import styled from 'styled-components';
 import { OrbitControls } from '@react-three/drei';
 import { VRCanvas } from '@react-three/xr';
 // import * as THREE from 'three';
+import { useHistory } from 'react-router-dom';
+import Icon from '../../components/Icon';
 
 const Wrapper = styled.div`
   width: 100vw;
@@ -13,7 +15,27 @@ const Wrapper = styled.div`
   user-select: none;
 `;
 
+const BackButton = styled.button`
+  border: none;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  position: fixed;
+  top: 10px;
+  left: 16px;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+  outline: none;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
 const InspectLocation: React.FC = () => {
+  const { goBack } = useHistory();
+
   const Lights = (): JSX.Element => {
     return (
       <>
@@ -52,6 +74,9 @@ const InspectLocation: React.FC = () => {
 
   return (
     <Wrapper>
+      <BackButton onClick={(): void => goBack()}>
+        <Icon name="close" />
+      </BackButton>
       <VRCanvas shadowMap colorManagement>
         <OrbitControls />
         <Lights />

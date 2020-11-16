@@ -2,7 +2,7 @@ import React from 'react';
 import Icons from '../../assets/icons';
 
 type Props = {
-  name: 'arrow-right' | 'commercial-building' | 'office-building';
+  name: 'arrow-right' | 'commercial-building' | 'office-building' | 'close';
   className?: string;
 };
 
