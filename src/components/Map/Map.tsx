@@ -181,7 +181,7 @@ const Map: React.FC<Props> = ({ className }) => {
     mapView.start();
   }
 
-  main();
+  //main();
 
   return (
     <Wrapper className={className}>
