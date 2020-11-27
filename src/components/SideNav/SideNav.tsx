@@ -1,3 +1,4 @@
+/* eslint-disable react/no-array-index-key */
 /* eslint-disable react/jsx-props-no-spreading */
 import React, { useState } from 'react';
 import {
@@ -22,7 +23,9 @@ const TabBar: React.FC = () => {
     <TabBarContainer>
       <CurrentTabIndicator tabsAmount={tabs.length} currentTab={currentTab} />
       {tabs.map((label, index) => (
-        <Tab onClick={(): void => setCurrentTab(index)}>{label}</Tab>
+        <Tab key={`tab-bar-${index}`} onClick={(): void => setCurrentTab(index)}>
+          {label}
+        </Tab>
       ))}
     </TabBarContainer>
   );
@@ -74,8 +77,8 @@ const Locations: React.FC = () => {
 
   return (
     <LocationsContainer>
-      {locations.map((props) => (
-        <ListItem {...props} />
+      {locations.map((props, index) => (
+        <ListItem key={`location-item-${index}`} {...props} />
       ))}
     </LocationsContainer>
   );

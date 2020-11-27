@@ -75,7 +75,7 @@ export const TabBarContainer = styled.nav`
   margin-top: 16px;
 `;
 
-export const Tab = styled.text`
+export const Tab = styled.span`
   font-family: 'SF Pro Display';
   font-weight: bolder;
   font-size: 9px;
