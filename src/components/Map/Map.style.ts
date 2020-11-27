@@ -11,3 +11,8 @@ export const Wrapper = styled.div`
   align-items: center;
   justify-content: center;
 `;
+
+export const MapCanvas = styled.canvas`
+  width: 100%;
+  height: 100%;
+`;
